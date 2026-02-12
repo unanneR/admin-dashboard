@@ -1,0 +1,59 @@
+#main-page{
+    display: flex;
+}
+#sidebar{
+    background-color:cyan;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+    gap: 50px;
+}
+
+#main-container{
+    
+    flex: 4;
+}
+
+#top-header{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.profile{
+    align-self: flex-end;
+    justify-self: flex-end;
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-header{
+    display: flex;
+    gap: 500px;
+    margin-top: 20px;
+    padding: 0px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+.bottom-profile{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+}
+
+.bp-text{
+    display: flex;
+    flex-direction: column;
+    align-content: center ;
+}
+
+#grid-container{
+    display: grid;
+    grid-template:auto;
+    gap: 50px;
+}

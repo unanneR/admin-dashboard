@@ -5,33 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 <body>
-     <div id="sidebar">
+    <div id="main-page">
+        <div id="sidebar">
+            <h3> Dashboard</h3>
+            <div class="top-side">
+                <div class="item">Home</div>
+                <div class="item">Profile</div>
+                <div class="item">Messages</div>
+                <div class="item">History</div>
+                <div class="item">Communities</div>
+            </div>
 
-        <div class="item">Dashboard</div>
-        <div class="item">Home</div>
-        <div class="item">Profile</div>
-        <div class="item">Messages</div>
-        <div class="item">History</div>
-        <div class="item">Communities</div>
+            <div class="bottom-side">
+                <div class="item">Settings</div>
+                <div class="item">Support</div>
+                <div class="item">Privacy</div>
+            </div>
 
-
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-     </div>
-
-     <div id="main-container">
-        <div id="top-bar">
-            
-            
-            <div class="press"><button>New</button></div>
-            <div class="press"><button>Uploads</button></div>
-            <div class="press"><button>Share</button></div>
         </div>
 
-     </div>
+        <div id="main-container">
+            <div id="top-bar">
+                <div id="top-header">
+                    <form action="#" method="get" role="search">
+                        <label for="site-search" class="visually-hidden"></label>
+                        <input type="search" id="site-search" name="q" placeholder="Search..." aria-label="Search through our site content">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                    <div class="notification-container" id="notification-icon">
+                        <i class="fa fa-bell bell-icon"></i>
+                    </div>
+                    
+                    <div class="profile">
+                        <div class="icon">
+                            0
+                        </div>
+
+                        <div class="name-head">
+                            morgan Oakley
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="bottom-header">
+                    <div class="bottom-profile">
+                        <div class="bp-image">
+                            <h1>0</h1>
+                        </div>
+                        <div class="bp-text">
+                            <div> Hi there</div>
+                            <div>Morgan Oakley (@morgan)</div>
+                        </div>
+
+                    </div>
+
+                    <div class="buttons">
+                        <div class="press"><button>New</button></div>
+                        <div class="press"><button>Uploads</button></div>
+                        <div class="press"><button>Share</button></div>
+                    </div>        
+                </div>
+            </div>
+
+            <div id="grid-container">
+
+                <div class="grid-item">
+                    <div class="anounce">Site Maintenance Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</div>
+                    <div class="anounce">Community Share Day Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</div>
+                    <div class="anounce">Updated Privacy Policy Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</div>                
+                </div>
+
+                <div class="grid-item">
+                    <div class="trend">@tegan – World Peace Builder</div>
+                    <div class="trend">@morgan – Super Cool Project</div>
+                    <div class="trend">@kendall – Life Changing App</div>
+                    <div class="trend">@alex - No Traffic Maker</div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="grid-item">Super Cool Project Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</div>
+                    <div class="grid-item">Less Cool Project Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</div>
+                    <div class="grid-item">Impossible App In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</div>
+                    <div class="grid-item">Easy Peasy App Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</div>
+                    <div class="grid-item">Ad Blocker Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</div>
+                    <div class="grid-item">Money Maker Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</div>
+                
+                </div>
+            </div>
+
+        </div>
+    </div>     
 </body>
 </html>
