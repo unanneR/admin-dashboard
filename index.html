@@ -3,131 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Dashboard | Morgan Oakley</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id="main-page">
-        <div id="sidebar">
-            <h3> Dashboard</h3>
-            <div class="top-side">
-                <div class="item">Home</div>
-                <div class="item">Profile</div>
-                <div class="item">Messages</div>
-                <div class="item">History</div>
-                <div class="item">Communities</div>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-border-all fa-2x"></i>
+                <h2>Dashboard</h2>
             </div>
+            <ul class="nav-links">
+                <li><i class="fa-solid fa-house"></i> Home</li>
+                <li><i class="fa-solid fa-id-card"></i> Profile</li>
+                <li><i class="fa-solid fa-message"></i> Messages</li>
+                <li><i class="fa-solid fa-clock-rotate-left"></i> History</li>
+                <li><i class="fa-solid fa-list-check"></i> Tasks</li>
+                <li><i class="fa-solid fa-users"></i> Communities</li>
+            </ul>
+            <ul class="nav-links">
+                <li><i class="fa-solid fa-gear"></i> Settings</li>
+                <li><i class="fa-solid fa-circle-question"></i> Support</li>
+                <li><i class="fa-solid fa-shield-halved"></i> Privacy</li>
+            </ul>
+        </nav>
 
-            <div class="bottom-side">
-                <div class="item">Settings</div>
-                <div class="item">Support</div>
-                <div class="item">Privacy</div>
-            </div>
-
-        </div>
-
-        <div id="main-container">
-            <div id="top-bar">
-                <div id="top-header">
-                    <form action="#" method="get" role="search">
-                        <label for="site-search" class="visually-hidden"></label>
-                        <input type="search" id="site-search" name="q" placeholder="Search..." aria-label="Search through our site content">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-
-                    <div class="notification-container" id="notification-icon">
-                        <i class="fa fa-bell bell-icon"></i>
+        <main class="main-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="text" placeholder="Search...">
                     </div>
-                    
-                    <div class="profile">
-                        <div class="icon">
-                            0
-                        </div>
-
-                        <div class="name-head">
-                            morgan Oakley
-                        </div>
-                    </div>
-
-                    
-                </div>
-                <div class="bottom-header">
-                    <div class="bottom-profile">
-                        <div class="bp-image">
-                            <h1>0</h1>
-                        </div>
-                        <div class="bp-text">
-                            <div> Hi there</div>
-                            <div>Morgan Oakley (@morgan)</div>
-                        </div>
-
-                    </div>
-
-                    <div class="buttons">
-                        <div class="press"><button>New</button></div>
-                        <div class="press"><button>Uploads</button></div>
-                        <div class="press"><button>Share</button></div>
-                    </div>        
-                </div>
-            </div>
-
-            <div class="side-container">
-                <div id="grid-container">
-
-                    <div class="grid-item">
-                        Super Cool Project Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.
-                    </div>
-                    <div class="grid-item">
-                        Less Cool Project Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.
-                    </div>
-                    <div class="grid-item">
-                        Impossible App In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.
-                    </div>
-                    <div class="grid-item">   
-                        Easy Peasy App Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.
-                    </div>
-                    <div class="grid-item">   
-                        Ad Blocker Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
-                    </div>
-                    <div class="grid-item">   
-                        Money Maker Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.               
+                    <div class="user-profile-small">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="avatar-small"></div>
+                        <span class="bold">Morgan Oakley</span>
                     </div>
                 </div>
-
-                <div class="anounce-container">
-                    <div class="alert-container">
-                        <div class="alert-item">
-                            Site Maintenance Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...
-                        </div>   
-                        <div class="alert-item">
-                            Community Share Day Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...
+                <div class="header-bottom">
+                    <div class="user-info-large">
+                        <div class="avatar-large"></div>
+                        <div class="welcome">
+                            <p>Hi there,</p>
+                            <h2>Morgan Oakley (@morgan)</h2>
                         </div>
-                        <div class="alert-item">   
-                            Updated Privacy Policy Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...               
+                    </div>
+                    <div class="actions">
+                        <button class="btn">New</button>
+                        <button class="btn">Upload</button>
+                        <button class="btn">Share</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <section class="projects">
+                    <h3>Your Projects</h3>
+                    <div class="project-cards">
+                        <div class="card">
+                            <div class="card-accent"></div>
+                            <h4>Super Cool Project</h4>
+                            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                            <div class="card-footer">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-accent"></div>
+                            <h4>Less Cool Project</h4>
+                            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien.</p>
+                            <div class="card-footer"><i class="fa-regular fa-star"></i><i class="fa-regular fa-eye"></i><i class="fa-solid fa-share-nodes"></i></div>
+                        </div>
+                        <div class="card">
+                            <div class="card-accent"></div>
+                            <h4>Impossible App</h4>
+                            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                            <div class="card-footer"><i class="fa-regular fa-star"></i><i class="fa-regular fa-eye"></i><i class="fa-solid fa-share-nodes"></i></div>
+                        </div>
+                        <div class="card">
+                            <div class="card-accent"></div>
+                            <h4>Easy Peasy App</h4>
+                            <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam.</p>
+                            <div class="card-footer"><i class="fa-regular fa-star"></i><i class="fa-regular fa-eye"></i><i class="fa-solid fa-share-nodes"></i></div>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="announcements-trending">
+                    <h3>Announcements</h3>
+                    <div class="white-box announce-box">
+                        <div class="item">
+                            <h5>Site Maintenance</h5>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit...</p>
+                        </div>
+                        <hr>
+                        <div class="item">
+                            <h5>Community Share Day</h5>
+                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero...</p>
                         </div>
                     </div>
 
-                    <div class="trend-container">
+                    <h3>Trending</h3>
+                    <div class="white-box trend-box">
                         <div class="trend-item">
-                            @tegan – World Peace Builder
-                        </div>
-                        <div class="trend-item">
-                            @morgan – Super Cool Project
-                        </div>
-                        <div class="trend-item">   
-                            @kendall – Life Changing App
+                            <div class="avatar-small" style="background-color: #fca5a5;"></div>
+                            <div><p class="bold">@tegan</p><p>World Peace Builder</p></div>
                         </div>
                         <div class="trend-item">
-                            @alex - No Traffic Maker
-                        </div>    
+                            <div class="avatar-small" style="background-color: #60a5fa;"></div>
+                            <div><p class="bold">@morgan</p><p>Super Cool Project</p></div>
+                        </div>
                     </div>
-                    </div> 
-                </div>
-
+                </aside>
             </div>
-    </div>     
+        </main>
+    </div>
 </body>
 </html>
